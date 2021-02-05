@@ -1,4 +1,4 @@
-def startwith_vowel(word):
+def startwith_vowel(word: bool) -> bool:
     for l in 'aeiou':
         if word.startswith(l): return True
     return False
