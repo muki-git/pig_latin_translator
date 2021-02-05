@@ -1,7 +1,7 @@
 ###############################
 # Configure Python application
 ###############################
-FROM python:Python 3.8
+FROM python:Python 3.8.5
 
 WORKDIR / app
 
