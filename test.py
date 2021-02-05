@@ -10,23 +10,23 @@ class TestTranslate(unittest.TestCase):
         self.assertFalse(startwith_vowel(word))
 
         def test_startwith_vowel_return_true_if_word_start_with_vowel(self):
-        word = 'abiodun'
-        self.assertTrue(startwith_vowel(word))
+            word = 'abiodun'
+            self.assertTrue(startwith_vowel(word))
 
         def test_translate_word_translate(self):
-        word = 'hello'
-        translated = translate_word(word)
+            word = 'hello'
+            translated = translate_word(word)
 
-        self.assertNotEqual(word, translated)
+            self.assertNotEqual(word, translated)
 
         def test_translate_word_match_capitalization(self):
-        word1 = 'Hello'
-        word2 = 'hello'
-        translated1 = translate_word(word1)
-        translated2 = translate_word(word2)
+            word1 = 'Hello'
+            word2 = 'hello'
+            translated1 = translate_word(word1)
+            translated2 = translate_word(word2)
 
-        self.assertTrue(translated1.istitle())
-        self.assertFalse(translated2.istitle())
+            self.assertTrue(translated1.istitle())
+            self.assertFalse(translated2.istitle())
 
 
 class TestClient(unittest.TestCase):
